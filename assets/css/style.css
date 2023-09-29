@@ -1,0 +1,111 @@
+#top{
+    width: 100%;
+    background-image: url(images/11.webp);
+}
+
+/* Initial style for .icon-list */
+.icon-list {
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Adding a smooth transition */
+}
+
+/* Hover effect for .icon-list */
+.icon-list:hover {
+    border: 0.9px solid rgba(255, 255, 255, 0.9);
+   
+    transform: scale(1.05);}
+
+/* Animation */
+@keyframes normal {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* Apply animation on hover */
+.icon-list:hover {
+    animation: normal 3s forwards; /* Apply animation on hover and keep the final state */
+}
+
+
+.row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-4{
+    width: 49% !important;
+}
+
+.images img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.images img:hover{
+    transform: scale(1.05);
+}
+
+article:hover{
+    transform: scale(1.03);
+}
+
+.article-link{
+    padding: 10px 20px ;
+    color: black;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-clamp: 1;
+}
+
+.show-on-media{
+    display: none;
+}
+
+.article-link:hover{
+    background-color: #8ebebc;
+    color: white;
+}
+
+.resume{
+    margin: 30px;
+}
+
+@media (max-width:700px){
+    .images img{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width:500px){
+    .images img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .row{
+        display: block !important;
+    }
+
+    .col-4{
+        width: 98% !important;
+    }
+}
+
+@media (max-width:961px){
+    .show-on-media{
+        display: block;
+    }
+}
+
